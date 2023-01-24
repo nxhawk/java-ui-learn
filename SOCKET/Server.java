@@ -12,7 +12,7 @@ public class Server {
 	public void serve() {
 		System.out.println("[SERVER] Running...");
 		try {
-			ServerSocket server = new ServerSocket(6543);
+			ServerSocket server = new ServerSocket(1985);
 			Socket socket = server.accept();
 			
 			BufferedReader br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
